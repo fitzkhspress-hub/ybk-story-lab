@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LQTQ Story Lab</title>
+  <meta name="description" content="Practice yearbook leads, quotes and transitions, then build a story with the LQTQ formula.">
+  <link rel="stylesheet" href="styles.css?v=1">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to activity</a>
+  <header class="top">
+    <div class="top-inner">
+      <div class="brand">
+        <p class="kicker">2027 Yearbook · Writer Training</p>
+        <p class="name">LQTQ Story Lab</p>
+      </div>
+      <button type="button" id="resetBtn" class="btn btn-ghost" hidden>Start over</button>
+    </div>
+    <div id="progress" class="progress" hidden>
+      <div class="progress-text"><span id="progLabel"></span><span id="progModule"></span></div>
+      <div class="bar" aria-hidden="true"><span id="progFill"></span></div>
+    </div>
+  </header>
+
+  <div id="confirm" class="confirm" role="alertdialog" aria-modal="false" aria-labelledby="confirmTitle" aria-describedby="confirmText" hidden>
+    <div class="confirm-box">
+      <h2 id="confirmTitle" tabindex="-1">Start over?</h2>
+      <p id="confirmText">This erases your answers, your name, your completion status and your certificate on this device.</p>
+      <div class="row">
+        <button type="button" id="confirmYes" class="btn btn-danger">Yes, erase and start over</button>
+        <button type="button" id="confirmNo" class="btn btn-ghost">Keep my progress</button>
+      </div>
+    </div>
+  </div>
+
+  <main id="main" class="wrap"></main>
+
+  <script src="app.js?v=1"></script>
+</body>
+</html>
